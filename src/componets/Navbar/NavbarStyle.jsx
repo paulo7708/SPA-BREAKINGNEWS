@@ -1,31 +1,33 @@
-nav {
+import styled from "styled-components";
+
+export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 1rem 0;
-  position: fixed;
-  /* top: 0; */
+  max-width: 100%;
+  padding: 1rem;
+  /* position: fixed;
+  top: 0; */
   background-color: #fff;
   z-index: 1;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+`;
 
-img {
+export const ImageLogo = styled.img`
   width: 3rem;
+  height: 1,5rem
   object-fit: cover;
   cursor: pointer;
-}
+`;
 
-div.input-search-space {
+export const Div = styled.div`
   position: relative;
   width: 200px;
   display: flex;
   align-items: center;
-  margin-left:  1rem;
-}
+`
 
-i.bi-search {
+export const I = styled.i`
   position: absolute;
   top: 1;
   right: 0.2rem;
@@ -35,10 +37,9 @@ i.bi-search {
   color: #757575;
   border-radius: 0.3rem;
   padding: 0.5rem;
-}
-
-div.input-search-space input{
-  outline:none;
+`
+export const Input = styled.input`
+  outline: none;
   font-size: 1rem;
   padding: 0.6rem;
   border: none;
@@ -46,22 +47,20 @@ div.input-search-space input{
   color: #757575;
   border-radius: 0.3rem;
   padding: 0.5rem;
-}
+   :focus {
+      border: 1px solid #0bade3;
+    }
+`
 
-div.input-search-space input:focus{
-  border: 1px solid #0bade3;
-}
-
-button {
+export const Button = styled.button`
   font-size: 1rem;
   border: none;
   background-color: #0bade3;
   color: #fff;
   border-radius: 0.3rem;
   padding: 0.4rem;
-  margin-right: 1rem;
   border: none;
-  outline:none;
+  outline: none;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   border-radius: 0.3rem;
@@ -69,8 +68,7 @@ button {
   width: 10%;
   font-weight: 500;
   letter-spacing: 0.1rem;
-}
-
-button:hover{
-  background-color: #0a86af;
-}
+  :hover {
+    background-color: #0a86af;
+  }
+`;

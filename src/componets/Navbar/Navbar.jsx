@@ -1,18 +1,20 @@
-import { Fragment } from "react";
 import logo from "../../images/icon0.png";
-import '../Navbar/Navbar.css'
+import { Button, Nav, ImageLogo, Div, I, Input } from "./NavbarStyle";
+
+/* import '../Navbar/Navbar.css' */
 
 export function Navbar() {
   return (
     <>
-      <nav>
-        <div className="input-search-space">
-          <i className="bi bi-search"></i>
-          <input type="text" name="pesquisa" id="" placeholder="Pesquisa" />
-        </div>
-        <img src={logo} alt="Logo do Breaking News" srcset="" />
-        <button>Entrar</button>
-      </nav>
+      <Nav>
+        <Div className="input-search-space">
+          <I className="bi bi-search"></I>
+          <Input type="text" name="pesquisa" id="" placeholder="Pesquisa" />
+        </Div>
+        <ImageLogo src={logo} alt="Logo do Breaking News" srcset="" />
+        <Button>Entrar</Button>
+      </Nav>
     </>
   );
 }
+
